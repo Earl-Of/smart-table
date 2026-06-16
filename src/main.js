@@ -36,11 +36,11 @@ async function render(action) {
   let state = collectState(); // состояние полей из таблицы
   //let result = [...data]; // копируем для последующего изменения
   let query = {};
-  // @todo: использование
-  // result = applySearching(result, state, action);
-  // result = applyFiltering(result, state, action);
-  // result = applySorting(result, state, action);
-  // result = applyPagination(result, state, action);
+  //  @todo: использование
+  //  result = applySearching(result, state, action);
+  //  result = applyFiltering(result, state, action);
+  //  result = applySorting(result, state, action);
+  //  result = applyPagination(result, state, action);
   query = applyPagination(query, state, action);
   query = applyFiltering(query, state, action);
   query = applySearching(query, state, action);
