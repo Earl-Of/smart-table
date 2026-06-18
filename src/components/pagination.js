@@ -46,7 +46,7 @@ export const initPagination = (
     // переносим код, который делали под @todo: #2.5
     fromRow.textContent = (page - 1) * limit + 1;
     toRow.textContent = Math.min(page * limit, total);
-    totalRows.textContent = pages.total;
+    totalRows.textContent = total;
   };
   return {
     updatePagination,
