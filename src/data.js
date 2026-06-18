@@ -10,6 +10,7 @@ export function initData(sourceData) {
   let lastQuery;
 
   // функция для приведения строк в тот вид, который нужен нашей таблице
+  
   const mapRecords = (data) =>
     data.map((item) => ({
       id: item.receipt_id,
